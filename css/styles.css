@@ -11,6 +11,13 @@ body {
   overflow-x: hidden;
 }
 
+.contenedor {
+  width: 100%;
+  max-width: 2000px;
+  margin:  0 auto;
+  overflow: hidden;
+}
+
 
 .wrapper {
   width: 100vw;
@@ -19,6 +26,8 @@ body {
   color: #fff;
 
 }
+
+
 
 
 
@@ -117,7 +126,7 @@ body {
 
 .main {
   margin: 0 auto;
-  width: 80vw;
+  width: 90vw;
   height: 80vh;
   display: grid;
   grid-template-columns: repeat(1,2fr);
@@ -157,7 +166,7 @@ body {
 .about {
   margin: 0 auto;
   width: 80vw;
-  height: 83vh;
+  height: 80vh;
   display: grid;
   grid-template-columns: repeat(10,1fr);
   align-items: center;
@@ -350,32 +359,7 @@ input:checked ~ .content {
   margin-bottom: 2em;
 }
 
-.form {
-  display: flex;
-  flex-direction: column;
-  width: 30vw;
-  margin-top: -15px;
-  padding: 2em;
-  
-  
-}
 
-.form input {
-  padding: 10px 20px;
-  margin-bottom: 1em;
-  background: none;
-  color: black;
-  border: 5px #191c32; 
-
-}
-
-.form textarea {
-  height: 150px;
-  background: none;
-  color: black;
-  padding: 1.5em;
-  border: 1px solid #191c32;
-}
 
 .btn-submit {
   padding: 10px 20px;
@@ -403,9 +387,23 @@ input:checked ~ .content {
   color: white;
 }
 
-.contact-form h4 {
-  padding: 2em;
-  margin-top: -40px;
+
+
+@media  screen and (max-width: 800px) {
+  body {
+    background: #191c32;
+  }
+  .main {
+    width: 100%;
+  }
+  
+}
+
+@media screen and (max-width: 400px) {
+  .contenedor {
+    width: 100%;
+  }
+  
 }
 
 
